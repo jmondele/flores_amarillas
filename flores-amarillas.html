@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>Para Gaby</title>
 <style>
   :root {
@@ -49,6 +54,7 @@
     --shadow: var(--card-shadow);
   }
 
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   * { box-sizing: border-box; }
 
   body {
@@ -366,7 +372,8 @@
     .reveal { opacity: 1; transform: none; transition: none; }
   }
 </style>
-
+</head>
+<body>
 <canvas id="petals" aria-hidden="true"></canvas>
 
 <main>
@@ -552,3 +559,6 @@
     els.forEach(function (el) { io.observe(el); });
   })();
 </script>
+
+</body>
+</html>
